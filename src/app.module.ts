@@ -21,7 +21,6 @@ import { ContextGuard } from './core/guards/context.guard';
 import { HttpExceptionFilter } from './common/http-exception.filter';
 import { HandlerResultInterceptor } from './common/handler-result.interceptor';
 import { UploadModule } from './modules/upload/upload.module';
-import { ProjectModule } from './modules/projects/project.module';
 @Module({
   imports: [
     TypeOrmModule.forRootAsync({
@@ -48,7 +47,6 @@ import { ProjectModule } from './modules/projects/project.module';
     AuthModule,
     RefeshTokenModule,
     UploadModule,
-    ProjectModule,
   ],
   controllers: [AppController],
   providers: [
