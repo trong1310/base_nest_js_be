@@ -4004,9 +4004,9 @@ ignore@^5.2.0:
   integrity sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==
 
 ignore@^7.0.0:
-  version "7.0.4"
-  resolved "https://registry.npmjs.org/ignore/-/ignore-7.0.4.tgz"
-  integrity sha512-gJzzk+PQNznz8ysRrC0aOkBNVRBDtE1n53IqyqEf3PXrYwomFs5q4pGMizBMJF+ykh03insJ27hB8gSrD2Hn8A==
+  version "7.0.5"
+  resolved "https://registry.npmjs.org/ignore/-/ignore-7.0.5.tgz"
+  integrity sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==
 
 import-fresh@^3.2.1, import-fresh@^3.3.0:
   version "3.3.1"
@@ -6962,12 +6962,7 @@ typescript-eslint@^8.20.0:
     "@typescript-eslint/parser" "8.32.1"
     "@typescript-eslint/utils" "8.32.1"
 
-typescript@*, typescript@^5.7.3, typescript@>=2.7, "typescript@>=4.3 <6", typescript@>=4.8.2, typescript@>=4.8.4, "typescript@>=4.8.4 <5.9.0", typescript@>=4.9.5, typescript@>3.6.0:
-  version "5.8.3"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz"
-  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
-
-typescript@5.9.3:
+typescript@*, typescript@^5.9.3, typescript@>=2.7, "typescript@>=4.3 <6", typescript@>=4.8.2, typescript@>=4.8.4, "typescript@>=4.8.4 <5.9.0", typescript@>=4.9.5, typescript@>3.6.0, typescript@5.9.3:
   version "5.9.3"
   resolved "https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz"
   integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
