@@ -55,14 +55,14 @@ import { UploadModule } from './modules/upload/upload.module';
       provide: APP_GUARD,
       useClass: ContextGuard,
     },
-    {
-      provide: APP_FILTER,
-      useClass: HttpExceptionFilter,
-    },
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: HandlerResultInterceptor,
-    },
+    // {
+    //   provide: APP_FILTER,
+    //   useClass: HttpExceptionFilter,
+    // },
+    // {
+    //   provide: APP_INTERCEPTOR,
+    //   useClass: HandlerResultInterceptor,
+    // },
   ],
 })
 export class AppModule implements NestModule {

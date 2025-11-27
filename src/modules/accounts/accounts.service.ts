@@ -5,6 +5,8 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Account } from './entities/account.entity';
 import { Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { BaseResponseMessagePage,BaseResponseMessage } from 'src/common/base-response-messages/base-response';
+import { ErrorCode, ErrorMessage } from 'src/common/error-code.enum';
 
 @Injectable()
 export class AccountsService {
@@ -33,13 +35,17 @@ export class AccountsService {
   }
 
   async create(createAccountDto: CreateAccountDto) {
+    const resp = new BaseResponseMessage();
     const checkExist = await this.accountRepository.findOne({
       where: { username: createAccountDto.username },
     });
     if (checkExist) {
-      return 'Tài khoản đã tồn tại';
-    }
-
+     resp.error = {
+        Code:  ErrorCode.ACCOUNT_EXIST,
+        Message: ErrorMessage[ErrorCode.ACCOUNT_EXIST],
+      };
+      return resp;
+     }
     const account = this.accountRepository.create(createAccountDto);
     await this.accountRepository.save(account);
     return {
